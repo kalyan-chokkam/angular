@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-
+import { SecondComponent} from './comp2';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<h1>App component</h1>
+              <div>text regarding componenrt</div>
+                <app-component2>hang tight...</app-component2>`
 })
 export class AppComponent {
-  title = 'app';
 }
